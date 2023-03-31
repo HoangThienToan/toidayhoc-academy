@@ -798,7 +798,21 @@ margin-right: 40px;
     75%  {right: 200px}
     100% {right: 0px;}
   }
-  .justify-content-center {
+ 
+
+.bt-star{
+   margin-top: 20px;
+}
+.color{
+    color: #ffa423;
+}
+.foot-pad{
+    padding-top: 100px;
+}
+.nearft{
+    top: 62px;
+}
+.justify-content-center {
     justify-content: center!important;
 }
 .tp-brand__box {
@@ -807,17 +821,11 @@ margin-right: 40px;
     padding-right: 60px;
     position: relative;
     z-index: 1;
-    bottom: 189px; 
+    bottom: 215px;
 }
 .white-bg {
     background: #ffffff;
 }
-.pt-40 {
-    padding-top: 40px;
-}
-.bt-star{
-   margin-top: 20px;
-}
-.color{
-    color: #ffa423;
+.pad-near-hear{
+    padding-top: 35px;
 }
