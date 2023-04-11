@@ -1,6 +1,0 @@
-{
-    "require": {
-        "aws/aws-sdk-php": "^3.255",
-        "phpmailer/phpmailer": "^6.7"
-    }
-}
