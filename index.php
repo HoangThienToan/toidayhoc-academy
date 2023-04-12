@@ -42,16 +42,7 @@
         // var_dump(isset($_SESSION["Email"]));
         if(!!$_SESSION){
             include_once 'dp.php';
-            if (isset($_SESSION["Email"])){
-                if(!!$_SESSION["Email"]) {
-                    $mail = $_SESSION["Email"];
-                    $get = new take();
-                    $query = "SELECT * FROM account where Email='$mail'";
-                    $result = $get->getData($query);
-                    $_SESSION["idacc"] = $result[0]['id'];
-                    $_SESSION["permis"] = $result[0]['permis'];
-                }
-            } else if (isset($_SESSION["uid"])) {
+            if (isset($_SESSION["uid"])) {
                 if(!!$_SESSION["uid"]) {
                     $uid = $_SESSION["uid"];
                     $get = new take();

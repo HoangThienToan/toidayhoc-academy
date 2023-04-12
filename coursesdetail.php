@@ -42,7 +42,6 @@
         // var_dump(!!$_SESSION["id"]);die;
         include_once("dp.php");
         if(isset($_SESSION["permis"])){
-            $_SESSION["permis"] = 2;
             $permis = $_SESSION["permis"];
         } else {
             header('Location: login.php'); exit;
@@ -575,11 +574,10 @@
                     data: Form,
                     success: function (data) {
                         // console.log(data)
-                        // window.location.replace("coursesdetail.php");
+                        window.location.replace("coursesdetail.php");
                     }
                 });
             })
-                
                 $('#submitE').click(function () {
                 let Form = new FormData();
                 var content = $('#content').val()

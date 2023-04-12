@@ -15,7 +15,6 @@ if(isset($_POST))
       echo "Acc already exists";
         $_SESSION["uid"] = $uid;
         $_SESSION["Name"] = $name;
-        $_SESSION["Email"] = $mail;
         $_SESSION["Phone"] = $phone;
         $_SESSION["permis"] = $result[0]['permis'];
         $_SESSION["idacc"] = $result[0]['id'];
@@ -43,12 +42,6 @@ if(isset($_POST))
         $_SESSION["Phone"] = $phone;
         $_SESSION["permis"] = 1;
         $_SESSION["uid"] = $uid;
-
-
-
-
-
-      
      }
 }
     
