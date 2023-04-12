@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slick-slider">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZmum3S_oTLVdJxvbn5DTtASfZTnqxCo_Wa4-K9NAuk5zLR2cc18yXmKA7AAEvLdfu-k&usqp=CAU"></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDeQ25sBY-5XUDnetr314JNDvM1Ggy0GI4apWms_DtZ3Qrdz42HUBLGFD2y-7shJAvtGY&usqp=CAU"></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKSMkddU8JbchZlPsKRhzyqmSO7xfYd3XuLlkAfYZJ0IKLLY5PuqgWZrW5FwWm3ENCnQ&usqp=CAU"></div>
+      </div>
+      <!-- Nhúng jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Nhúng plugin Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slick-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+            dots: true
+          });
+        });
+      </script>
+</body>
+</html>

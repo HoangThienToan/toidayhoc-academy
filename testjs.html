@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides1 {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow1-container {
+  max-width:auto;
+  
+
+  display: flex;
+  overflow-x: auto;
+  overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+.slideshow1-container::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+
+
+
+
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display: flex;
+  margin-right: 10px;
+}
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow1-container">
+
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-4.png" style="width:150px" >
+ 
+</div>
+
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-5.png" style="width:150px">
+  
+</div>
+
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-6.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-2.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-1.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-3.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-4.png" style="width:150px">
+ 
+</div>
+
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-5.png" style="width:150px">
+  
+</div>
+
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-6.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-2.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-1.png" style="width:150px">
+ 
+</div>
+<div class="mySlides1 fade1">
+  
+  <img src="https://data.themeim.com/html/tutorgo/assets/img/brand/brand-3.png" style="width:150px">
+ 
+</div>
+
+
+</div>
+
+
+
+
+<script>
+   let slide1 = 0;
+   showSlides();
+
+   function showSlides() {
+   let j;
+   let slides = document.getElementsByClassName("mySlides1");
+    console.log("slides.length");
+  for (j = 0; j < slides.length; j++) {
+     slides[j].style.display = "none";  
+   }
+    slide1++;
+     
+ 
+    slides[slide1-1].style.display = "block";  
+    slides[slide1].style.display = "block";  
+    slides[slide1+1].style.display = "block";  
+    slides[slide1+2].style.display = "block";                                         slides[slide1+3].style.display = "block"; 
+                                        slides[slide1+4].style.display = "block"; 
+    if (slide1 > slides.length-6) {slide1 = 1}  
+    
+   
+
+    setTimeout(showSlides, 500); // 
+ }
+   
+  
+</script>
+
+</body>
+</html> 
