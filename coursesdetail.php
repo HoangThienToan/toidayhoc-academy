@@ -532,6 +532,7 @@
                     formLesson.innerHTML = html
                 }
             }
+            
             var modal = $('#modal');
                 var span = $('.close');
                 span.click(function () {
@@ -552,6 +553,7 @@
                     $("#ex").val("");
                     $("#link").html("");
                 })
+                
             $('.submitLesson').click(function () {
                 let Form = new FormData();
                 var stt = $(this).siblings('div').children('input').val()
